@@ -4,6 +4,9 @@
 var add=function(x,y){
 	return x+y
 }
+function sum(x,y){
+	return(x+y)
+}
 
 
 
@@ -13,6 +16,7 @@ var add=function(x,y){
 var avg=function(x,y,z){
 	return (x+y+z)/3
 }
+function avg(a,b,c)
 
 
 
@@ -20,7 +24,9 @@ var avg=function(x,y,z){
 // Write a function called `getLength` that takes one
 // parameter (a string) and returns the length
 
-
+function getLenght(a){
+	return a.length
+}
 
 
 // Q4
@@ -28,7 +34,7 @@ var avg=function(x,y,z){
 // two parameters and returns `true` if the second
 // parameter is greater than the first. Otherwise
 // the function should return `false`.
-
+function
 
 
 
@@ -37,7 +43,9 @@ var avg=function(x,y,z){
 // single parameter and returns a string that
 // is formated like "Hello, Name!" where *Name*
 // is the parameter that was passed in.
-
+function greet(x){
+	return "Hell, "+ x + "!"
+}
 
 
 
@@ -51,3 +59,9 @@ var avg=function(x,y,z){
 // strings. For example:
 // words: "quick", "fox", "fence"
 // sentence: "quick brown fox jumps over the fence"
+//THere were several bricks* laying between * * that * when touched
+function madlib(pluralNoun1, adjective, pluralNoun2, verb1){
+	return "There were several " + pluralNoun1 + "laying between " + adjective + "" + pluralNoun2 + " that " + verb1 + " when touched."
+}
+
+madlib()
