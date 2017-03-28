@@ -54,7 +54,7 @@ var odds = numbers.filter(function(value){
 // ---------------------------
 
 var words = strings.filter(function(value){
-	return value.indexOf('is') !=== -1
+	return value.indexOf('is') !== -1
 })
 
 // ---------------------------
@@ -71,7 +71,14 @@ var newArr = numbers.concat(strings)
 var jsteachers = instructors.filter(function(value){
 	return value.teaches === 'JavaScript'
 }).sort(function(a,b){
-	if (a.firstname < b.firstname)
+	if (a.firstname < b.firstname) {
+        return 1
+    } else if (a.firstname == b.firstname) {
+        return 0
+    } else{
+        return -1
+    }
+    
 })
 
 

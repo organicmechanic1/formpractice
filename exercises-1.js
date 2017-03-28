@@ -1,22 +1,17 @@
 // Q1
 // Write a function called `sum` that takes two
 // parameters and returns the sum of those 2 numbers.
-var add=function(x,y){
-	return x+y
+function sum(a,b){
+      return(a+b)
 }
-function sum(x,y){
-	return x + y
-}
-
 
 
 // Q2
 // Write a function named `avg` that takes 3 parameters
 // and returns the average of those 3 numbers.
 function avg(x,y,z){
-	return (x + y + z) / 3
+	return(x+y+z)/3
 }
-
 
 
 
@@ -35,6 +30,14 @@ function getLength(a){
 // two parameters and returns `true` if the second
 // parameter is greater than the first. Otherwise
 // the function should return `false`.
+function greaterThan(a , b) {
+	if (b > a) {
+		return true
+	} else {
+		return false
+	}
+}
+
 function greaterThan(a , b){
 	if (a < b) {
 		return true
@@ -50,10 +53,12 @@ function greaterThan(a , b){
 // single parameter and returns a string that
 // is formated like "Hello, Name!" where *Name*
 // is the parameter that was passed in.
+function greet(name) {
+	return 'Hello,' + (name) + '!'
+}
 function greet(a) {
 	return "Hello," + a + "!"
 }
-
 
 // Q6
 // Write a function called `madlib` that takes
@@ -67,9 +72,15 @@ function greet(a) {
 // sentence: "quick brown fox jumps over the fence"
 // Crush your enemies(a), see them driven(b) before you,
 // and hear(c) the lamentation of the women(d)!
-
-
+var a = "enemies"
+var b = "driven"
+var c = "hear"
+var d = "women"
+function madLib(a, b, c, d) {
+	return "Crush your " + a + ", see them " + b + " before you and " + c + " the lamentation of the " + d + "!"
+}
 function madLib (a, b, c, d){
 	//return "Crush your" + a + ", see them" + b + "before you, and" + c + "the lamentation of the" + d + "!"
 	return `Crush your ${a} , see them driven ${b} before you, and ${c} the lamentation of the ${d} !`
 }
+
